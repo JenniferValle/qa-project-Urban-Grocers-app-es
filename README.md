@@ -45,6 +45,23 @@ source venv/bin/activate
 ```
 ---
 
+## 📌 Reglas para ejecutar las pruebas
+Ubicación: Las pruebas deben ejecutarse desde la raíz del proyecto, donde está ubicado create_kit_name_kit_test.py.
+
+Dependencias internas
+
+sender_stand_request.py: gestiona la obtención del token de autenticación y el envío de solicitudes hacia el endpoint.
+
+data.py: contiene los valores de entrada para todas las pruebas, lo que facilita el mantenimiento y evita repetir datos.
+
+Comportamiento esperado
+
+Pruebas negativas: Algunos test están pensados para fallar si el backend no valida correctamente el campo name. Esto indica un defecto del backend, no del código de pruebas.
+
+Mensajes auxiliares: Se muestran tokens generados en consola (por ejemplo: authToken generado: ...). Son mensajes puramente informativos y no afectan la ejecución.
+
+Cobertura: Se consideran casos válidos, vacíos, de longitud excesiva, tipo de dato incorrecto, ausencia del campo, caracteres especiales y valores límite (511 y 512 caracteres).
+
 ## 📦 Instalación de Dependencias
 Este proyecto utiliza Pytest. Intentalo con:
 ```bash
@@ -69,19 +86,12 @@ pytest create_kit_name_kit_test.py
 
 ---
 
-## 📌 Reglas para ejecutar las pruebas
-Ubicación: Las pruebas deben ejecutarse desde la raíz del proyecto, donde está ubicado create_kit_name_kit_test.py.
 
-Dependencias internas
 
-sender_stand_request.py: gestiona la obtención del token de autenticación y el envío de solicitudes hacia el endpoint.
 
-data.py: contiene los valores de entrada para todas las pruebas, lo que facilita el mantenimiento y evita repetir datos.
 
-Comportamiento esperado
 
-Pruebas negativas: Algunos test están pensados para fallar si el backend no valida correctamente el campo name. Esto indica un defecto del backend, no del código de pruebas.
 
-Mensajes auxiliares: Se muestran tokens generados en consola (por ejemplo: authToken generado: ...). Son mensajes puramente informativos y no afectan la ejecución.
 
-Cobertura: Se consideran casos válidos, vacíos, de longitud excesiva, tipo de dato incorrecto, ausencia del campo, caracteres especiales y valores límite (511 y 512 caracteres).
+
+
