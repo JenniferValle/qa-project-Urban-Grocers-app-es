@@ -4,10 +4,9 @@
 
 ## 🧪 Descripción del Proyecto
 
-Este proyecto automatiza pruebas para el endpoint `/api/v1/kits` de la aplicación Urban Grocers, enfocándose en la validación del campo `name`. Las pruebas se desarrollaron con **Python** y el framework **Pytest**.
+Este proyecto automatiza pruebas para el endpoint /api/v1/kits de la aplicación Urban Grocers, centrándose en la validación del campo name. Las pruebas se implementaron utilizando Python junto con el framework Pytest.
 
-El objetivo principal es verificar que el backend acepte solo valores válidos y rechace adecuadamente los datos incorrectos, según los requisitos funcionales del sistema.
-
+El propósito principal es comprobar que el backend acepte únicamente valores correctos y rechace apropiadamente los datos inválidos, conforme a los requisitos funcionales del sistema.
 ---
 
 ## 📁 Estructura del Proyecto
