@@ -1,6 +1,6 @@
 # Proyecto Urban Grocers
 ﻿# Urban Grocers – Automatización de Pruebas de API  
-**JENNIFER VALLE – Sprint 8 (TripleTen QA Engineer Bootcamp)**
+**JENNIFER VALL – Sprint 8 (TripleTen QA Engineer Bootcamp)**
 
 ## 🧪 Descripción del Proyecto
 
